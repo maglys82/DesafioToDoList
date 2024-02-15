@@ -10,7 +10,5 @@ const pool = new Pool({
     allowExitOnIdle: true
 })
 
-app.listen(puerto, () => {
-    console.log(`Servidor escuchando en el puerto ${puerto}`);
-  });
+
   
