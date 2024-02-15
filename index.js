@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const express = require('express')
 const app = express()
 const { query } = require("express");
@@ -5,13 +6,14 @@ const format = require("pg-format");
 const { obtenerJoyas, obtenerJoyasFiltro } = require('./consulta')
 app.listen(3000, console.log('Server ON'))
 
+=======
+>>>>>>> be0b00dc8fd710df330d3ec0ff0dcc58eb9c6c19
 function agregarTarea(){
   const elementoTarea= document.getElementById("id1");
   const tarea= elementoTarea.value;
   const elementoUl = document.getElementById("lisTarea")
   elementoUl.innerHTML+= `<li>${tarea}</li>`
 }
-
 
 //Funcion para lectura de Archico Html
 app.get('/', (req, res) => {
