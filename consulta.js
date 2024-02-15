@@ -5,10 +5,10 @@ const pool = new Pool({
     user: "postgres",
     host: "localhost",
     password: "postgres",
-    database: "tareas",
+    database: "tarea",
     port: 5432,
     allowExitOnIdle: true
 })
 
-
+module.exports= {pool}
   
