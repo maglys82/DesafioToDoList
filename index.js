@@ -35,6 +35,16 @@ app.post('/tareas',async(req,res)=>{
     console.log('Error al Agregar Tarea')
   }
 })
+//Funcion Obtener Tareas
+const obtenerTareas = async()=>{
+  const consulta = 'Select * from tareas'
+  const {rows} = await pool.query(consulta)
+  return rows
+}
 
+app.get('/tareas',async(req,res)=>{
+  const tareas = await obtenerTareas()
+  res.json(tareas)
+})
 
 app.listen(3000, console.log('Server ON'))
